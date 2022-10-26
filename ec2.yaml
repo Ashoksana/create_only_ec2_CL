@@ -1,0 +1,12 @@
+AWSTemplateFormatVersion: "2010-09-09"
+
+Resources:
+  SanaPubEc2Instance:
+     Type: AWS::EC2::Instance
+     Properties:
+      ImageId: ami-09d3b3274b6c5d4aa
+      InstanceType: t2.micro
+      Tags:
+        - Key: Name
+          Value: Ashok-Ec2
+      KeyName: redhat
